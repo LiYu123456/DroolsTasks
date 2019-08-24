@@ -1,0 +1,20 @@
+package drl;
+
+import com.tasks.dataObj.User;
+import com.tasks.dataObj.VIPUser;
+import java.util.List;
+
+global java.util.List vipUserList;
+
+query "queryData_1"()
+    exists (VIPUser(name="刘备",vipNo="123456") from vipUserList)
+end
+
+
+rule "opera"
+    when
+        $p: User(name="")
+        "queryData_1"()
+    then
+        System.out.println("存在该用户");
+end

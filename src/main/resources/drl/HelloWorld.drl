@@ -1,0 +1,21 @@
+package drl;
+
+import com.tasks.dataObj.User;
+
+global java.util.List myGlobalList;
+
+rule "HelloWorld"
+    when
+        eval(true)
+    then
+        System.out.println("Hello World!!!");
+end
+
+rule "user"
+    when
+        $u:User(name=="张三",age==18)
+    then
+        $u.setGender("男");
+        System.out.println("HelloWorld,"+$u.getName());
+        myGlobalList.add("全局变量的量:"+myGlobalList.size());
+end

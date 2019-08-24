@@ -1,0 +1,57 @@
+package drl;
+
+import com.tasks.dataObj.User;
+import java.util.List;
+
+global java.util.List myGlobalList;
+
+rule "opera"
+    when
+        $u:User(name=="张三")
+        $b:User(name=="李四")
+        eval($u.getAge()<$b.getAge())
+    then
+        System.out.println("比较大的是：");
+        myGlobalList.add("全局变量的量:"+myGlobalList.size());
+end
+
+rule "contains"
+    when
+        $s:String()
+        $u:User(name contains $s)
+    then
+        System.out.println("用户存在"+$u.getName());
+end
+
+rule "Notcontains"
+    when
+        $s:String()
+        $u:User(name not contains $s)
+    then
+        System.out.println("用户不存在"+$u.getName());
+end
+
+rule "memberOf"
+    when
+        $list:List()
+        $u:User(name memberOf $list)
+    then
+        System.out.println("用户存在");
+end
+
+rule "NotmemberOf"
+    when
+        $list:List()
+        $u:User(name not memberOf $list)
+    then
+        System.out.println("用户不存在");
+end
+
+
+rule "matches"
+    when
+        $s:String()
+        $u:User(name matches $s)
+    then
+        System.out.println("匹配字符"+$u.getName());
+end

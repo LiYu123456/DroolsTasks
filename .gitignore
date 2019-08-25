@@ -7,3 +7,4 @@ target/
 *.ipr
 .mvn
 mvn*
+logs/

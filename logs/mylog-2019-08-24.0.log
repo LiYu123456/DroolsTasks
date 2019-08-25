@@ -1,0 +1,320 @@
+[ INFO ] [2019-08-24 18:02:11] org.springframework.boot.test.context.SpringBootTestContextBootstrapper [307] - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.tasks.QueryTests], using SpringBootContextLoader
+[ INFO ] [2019-08-24 18:02:11] org.springframework.test.context.support.AbstractContextLoader [264] - Could not detect default resource locations for test class [com.tasks.QueryTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+[ INFO ] [2019-08-24 18:02:11] org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [82] - Could not detect default configuration classes for test class [com.tasks.QueryTests]: QueryTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[ INFO ] [2019-08-24 18:02:12] org.springframework.boot.test.context.SpringBootTestContextBootstrapper [206] - Found @SpringBootConfiguration com.tasks.Application for test class com.tasks.QueryTests
+[ INFO ] [2019-08-24 18:02:12] org.springframework.boot.test.context.SpringBootTestContextBootstrapper [248] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[ INFO ] [2019-08-24 18:02:12] org.springframework.boot.test.context.SpringBootTestContextBootstrapper [174] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@47542153, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@33afa13b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7a4ccb53, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@309e345f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@56a6d5a6, org.springframework.test.context.transaction.TransactionalTestExecutionListener@18ce0030, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4445629, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@45b9a632, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@25d250c6, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4df50bcc, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6b26e945, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@63a65a25]
+[ INFO ] [2019-08-24 18:02:14] com.tasks.QueryTests [48] - Starting QueryTests on HI6XWD32Z4B3UIU with PID 4404 (started by Administrator in D:\GitRepository\DroolsTasks)
+[ INFO ] [2019-08-24 18:02:14] com.tasks.QueryTests [593] - No active profile set, falling back to default profiles: default
+[ INFO ] [2019-08-24 18:02:14] org.springframework.web.context.support.GenericWebApplicationContext [583] - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7ea9e1e2: startup date [Sat Aug 24 18:02:14 CST 2019]; root of context hierarchy
+[ INFO ] [2019-08-24 18:02:15] org.hibernate.validator.internal.util.Version [30] - HV000001: Hibernate Validator 5.3.6.Final
+[ WARN ] [2019-08-24 18:02:16] org.springframework.context.annotation.ConfigurationClassEnhancer [350] - @Bean method DroolsAutoConfiguration.kiePostProcessor is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+[ INFO ] [2019-08-24 18:02:16] org.kie.spring.KModuleBeanFactoryPostProcessor [103] - :: BeanFactoryPostProcessor::postProcessBeanFactory called ::
+[ WARN ] [2019-08-24 18:02:16] org.drools.compiler.kie.builder.impl.ClasspathKieProject [336] - Unable to find pom.properties in /D:/GitRepository/DroolsTasks/target/classes/com/tasks/config
+[ INFO ] [2019-08-24 18:02:16] org.drools.compiler.kie.builder.impl.ClasspathKieProject [378] - Recursed up folders, found and used pom.xml D:\GitRepository\DroolsTasks\pom.xml
+[ INFO ] [2019-08-24 18:02:16] org.kie.spring.KModuleBeanFactoryPostProcessor [119] - Found project with releaseId: com.tasks:DroolsTasks:1.0-SNAPSHOT
+[ INFO ] [2019-08-24 18:02:17] org.kie.api.internal.utils.ServiceDiscoveryImpl [105] - Loading kie.conf from  jar:file:/D:/mavenRepository/org/drools/drools-core/7.21.0.Final/drools-core-7.21.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+[ INFO ] [2019-08-24 18:02:17] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.drools.core.io.impl.ResourceFactoryServiceImpl
+
+[ INFO ] [2019-08-24 18:02:17] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.drools.core.marshalling.impl.MarshallerProviderImpl
+
+[ INFO ] [2019-08-24 18:02:17] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.drools.core.concurrent.ExecutorProviderImpl
+
+[ INFO ] [2019-08-24 18:02:17] org.kie.api.internal.utils.ServiceDiscoveryImpl [105] - Loading kie.conf from  jar:file:/D:/mavenRepository/org/kie/kie-internal/7.21.0.Final/kie-internal-7.21.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+[ INFO ] [2019-08-24 18:02:17] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.kie.internal.services.KieAssemblersImpl
+
+[ INFO ] [2019-08-24 18:02:17] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.kie.internal.services.KieRuntimesImpl
+
+[ INFO ] [2019-08-24 18:02:17] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.kie.internal.services.KieWeaversImpl
+
+[ INFO ] [2019-08-24 18:02:17] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.kie.internal.services.KieBeliefsImpl
+
+[ INFO ] [2019-08-24 18:02:17] org.kie.api.internal.utils.ServiceDiscoveryImpl [105] - Loading kie.conf from  jar:file:/D:/mavenRepository/org/jbpm/jbpm-flow/7.21.0.Final/jbpm-flow-7.21.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+[ INFO ] [2019-08-24 18:02:17] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.jbpm.marshalling.impl.ProcessMarshallerFactoryServiceImpl
+
+[ INFO ] [2019-08-24 18:02:17] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.jbpm.process.instance.ProcessRuntimeFactoryServiceImpl
+
+[ INFO ] [2019-08-24 18:02:17] org.kie.api.internal.utils.ServiceDiscoveryImpl [105] - Loading kie.conf from  jar:file:/D:/mavenRepository/org/kie/kie-dmn-core/7.21.0.Final/kie-dmn-core-7.21.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+[ INFO ] [2019-08-24 18:02:17] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service +org.kie.dmn.core.assembler.DMNAssemblerService
+
+[ INFO ] [2019-08-24 18:02:17] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service +org.kie.dmn.core.runtime.DMNRuntimeService
+
+[ INFO ] [2019-08-24 18:02:17] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service +org.kie.dmn.core.weaver.DMNWeaverService
+
+[ INFO ] [2019-08-24 18:02:17] org.kie.api.internal.utils.ServiceDiscoveryImpl [105] - Loading kie.conf from  jar:file:/D:/mavenRepository/org/drools/drools-model-compiler/7.21.0.Final/drools-model-compiler-7.21.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+[ INFO ] [2019-08-24 18:02:17] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.drools.modelcompiler.CanonicalKieModuleProvider
+
+[ INFO ] [2019-08-24 18:02:17] org.kie.api.internal.utils.ServiceDiscoveryImpl [105] - Loading kie.conf from  jar:file:/D:/mavenRepository/org/drools/drools-compiler/7.21.0.Final/drools-compiler-7.21.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+[ INFO ] [2019-08-24 18:02:17] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.drools.compiler.kie.builder.impl.KieServicesImpl
+
+[ INFO ] [2019-08-24 18:02:17] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.drools.compiler.builder.impl.KnowledgeBuilderFactoryServiceImpl
+
+[ INFO ] [2019-08-24 18:02:17] org.kie.api.internal.utils.ServiceDiscoveryImpl [105] - Loading kie.conf from  jar:file:/D:/mavenRepository/org/drools/drools-decisiontables/7.21.0.Final/drools-decisiontables-7.21.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+[ INFO ] [2019-08-24 18:02:17] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.drools.decisiontable.DecisionTableProviderImpl
+
+[ INFO ] [2019-08-24 18:02:17] org.drools.compiler.kie.builder.impl.KieRepositoryImpl [111] - KieModule was added: com.tasks.config.DroolsAutoConfiguration$1@495083a0
+[ INFO ] [2019-08-24 18:02:21] org.drools.compiler.kie.builder.impl.KieRepositoryImpl [111] - KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0]
+[ INFO ] [2019-08-24 18:02:24] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [534] - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7ea9e1e2: startup date [Sat Aug 24 18:02:14 CST 2019]; root of context hierarchy
+[ INFO ] [2019-08-24 18:02:24] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2019-08-24 18:02:24] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2019-08-24 18:02:24] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-08-24 18:02:24] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-08-24 18:02:24] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-08-24 18:02:24] com.tasks.QueryTests [57] - Started QueryTests in 11.654 seconds (JVM running for 14.838)
+[ INFO ] [2019-08-24 18:02:25] org.springframework.web.context.support.GenericWebApplicationContext [984] - Closing org.springframework.web.context.support.GenericWebApplicationContext@7ea9e1e2: startup date [Sat Aug 24 18:02:14 CST 2019]; root of context hierarchy
+[ INFO ] [2019-08-24 18:02:56] org.springframework.boot.test.context.SpringBootTestContextBootstrapper [307] - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.tasks.QueryTests], using SpringBootContextLoader
+[ INFO ] [2019-08-24 18:02:56] org.springframework.test.context.support.AbstractContextLoader [264] - Could not detect default resource locations for test class [com.tasks.QueryTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+[ INFO ] [2019-08-24 18:02:56] org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [82] - Could not detect default configuration classes for test class [com.tasks.QueryTests]: QueryTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[ INFO ] [2019-08-24 18:02:56] org.springframework.boot.test.context.SpringBootTestContextBootstrapper [206] - Found @SpringBootConfiguration com.tasks.Application for test class com.tasks.QueryTests
+[ INFO ] [2019-08-24 18:02:56] org.springframework.boot.test.context.SpringBootTestContextBootstrapper [248] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[ INFO ] [2019-08-24 18:02:56] org.springframework.boot.test.context.SpringBootTestContextBootstrapper [174] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7a4ccb53, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@309e345f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@56a6d5a6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@18ce0030, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4445629, org.springframework.test.context.transaction.TransactionalTestExecutionListener@45b9a632, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@25d250c6, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4df50bcc, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6b26e945, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@63a65a25, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@54c562f7, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@318ba8c8]
+[ INFO ] [2019-08-24 18:02:58] com.tasks.QueryTests [48] - Starting QueryTests on HI6XWD32Z4B3UIU with PID 2360 (started by Administrator in D:\GitRepository\DroolsTasks)
+[ INFO ] [2019-08-24 18:02:58] com.tasks.QueryTests [593] - No active profile set, falling back to default profiles: default
+[ INFO ] [2019-08-24 18:02:58] org.springframework.web.context.support.GenericWebApplicationContext [583] - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7ea9e1e2: startup date [Sat Aug 24 18:02:58 CST 2019]; root of context hierarchy
+[ INFO ] [2019-08-24 18:02:59] org.hibernate.validator.internal.util.Version [30] - HV000001: Hibernate Validator 5.3.6.Final
+[ WARN ] [2019-08-24 18:03:00] org.springframework.context.annotation.ConfigurationClassEnhancer [350] - @Bean method DroolsAutoConfiguration.kiePostProcessor is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+[ INFO ] [2019-08-24 18:03:00] org.kie.spring.KModuleBeanFactoryPostProcessor [103] - :: BeanFactoryPostProcessor::postProcessBeanFactory called ::
+[ WARN ] [2019-08-24 18:03:00] org.drools.compiler.kie.builder.impl.ClasspathKieProject [336] - Unable to find pom.properties in /D:/GitRepository/DroolsTasks/target/classes/com/tasks/config
+[ INFO ] [2019-08-24 18:03:00] org.drools.compiler.kie.builder.impl.ClasspathKieProject [378] - Recursed up folders, found and used pom.xml D:\GitRepository\DroolsTasks\pom.xml
+[ INFO ] [2019-08-24 18:03:00] org.kie.spring.KModuleBeanFactoryPostProcessor [119] - Found project with releaseId: com.tasks:DroolsTasks:1.0-SNAPSHOT
+[ INFO ] [2019-08-24 18:03:00] org.kie.api.internal.utils.ServiceDiscoveryImpl [105] - Loading kie.conf from  jar:file:/D:/mavenRepository/org/drools/drools-core/7.21.0.Final/drools-core-7.21.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+[ INFO ] [2019-08-24 18:03:00] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.drools.core.io.impl.ResourceFactoryServiceImpl
+
+[ INFO ] [2019-08-24 18:03:00] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.drools.core.marshalling.impl.MarshallerProviderImpl
+
+[ INFO ] [2019-08-24 18:03:00] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.drools.core.concurrent.ExecutorProviderImpl
+
+[ INFO ] [2019-08-24 18:03:00] org.kie.api.internal.utils.ServiceDiscoveryImpl [105] - Loading kie.conf from  jar:file:/D:/mavenRepository/org/kie/kie-internal/7.21.0.Final/kie-internal-7.21.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+[ INFO ] [2019-08-24 18:03:00] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.kie.internal.services.KieAssemblersImpl
+
+[ INFO ] [2019-08-24 18:03:00] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.kie.internal.services.KieRuntimesImpl
+
+[ INFO ] [2019-08-24 18:03:00] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.kie.internal.services.KieWeaversImpl
+
+[ INFO ] [2019-08-24 18:03:00] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.kie.internal.services.KieBeliefsImpl
+
+[ INFO ] [2019-08-24 18:03:00] org.kie.api.internal.utils.ServiceDiscoveryImpl [105] - Loading kie.conf from  jar:file:/D:/mavenRepository/org/jbpm/jbpm-flow/7.21.0.Final/jbpm-flow-7.21.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+[ INFO ] [2019-08-24 18:03:00] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.jbpm.marshalling.impl.ProcessMarshallerFactoryServiceImpl
+
+[ INFO ] [2019-08-24 18:03:00] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.jbpm.process.instance.ProcessRuntimeFactoryServiceImpl
+
+[ INFO ] [2019-08-24 18:03:00] org.kie.api.internal.utils.ServiceDiscoveryImpl [105] - Loading kie.conf from  jar:file:/D:/mavenRepository/org/kie/kie-dmn-core/7.21.0.Final/kie-dmn-core-7.21.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+[ INFO ] [2019-08-24 18:03:00] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service +org.kie.dmn.core.assembler.DMNAssemblerService
+
+[ INFO ] [2019-08-24 18:03:00] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service +org.kie.dmn.core.runtime.DMNRuntimeService
+
+[ INFO ] [2019-08-24 18:03:00] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service +org.kie.dmn.core.weaver.DMNWeaverService
+
+[ INFO ] [2019-08-24 18:03:00] org.kie.api.internal.utils.ServiceDiscoveryImpl [105] - Loading kie.conf from  jar:file:/D:/mavenRepository/org/drools/drools-model-compiler/7.21.0.Final/drools-model-compiler-7.21.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+[ INFO ] [2019-08-24 18:03:00] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.drools.modelcompiler.CanonicalKieModuleProvider
+
+[ INFO ] [2019-08-24 18:03:00] org.kie.api.internal.utils.ServiceDiscoveryImpl [105] - Loading kie.conf from  jar:file:/D:/mavenRepository/org/drools/drools-compiler/7.21.0.Final/drools-compiler-7.21.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+[ INFO ] [2019-08-24 18:03:00] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.drools.compiler.kie.builder.impl.KieServicesImpl
+
+[ INFO ] [2019-08-24 18:03:00] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.drools.compiler.builder.impl.KnowledgeBuilderFactoryServiceImpl
+
+[ INFO ] [2019-08-24 18:03:00] org.kie.api.internal.utils.ServiceDiscoveryImpl [105] - Loading kie.conf from  jar:file:/D:/mavenRepository/org/drools/drools-decisiontables/7.21.0.Final/drools-decisiontables-7.21.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+[ INFO ] [2019-08-24 18:03:00] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.drools.decisiontable.DecisionTableProviderImpl
+
+[ INFO ] [2019-08-24 18:03:00] org.drools.compiler.kie.builder.impl.KieRepositoryImpl [111] - KieModule was added: com.tasks.config.DroolsAutoConfiguration$1@51e4ccb3
+[ INFO ] [2019-08-24 18:03:03] org.drools.compiler.kie.builder.impl.KieRepositoryImpl [111] - KieModule was added: MemoryKieModule[releaseId=org.default:artifact:1.0.0]
+[ INFO ] [2019-08-24 18:03:04] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [534] - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7ea9e1e2: startup date [Sat Aug 24 18:02:58 CST 2019]; root of context hierarchy
+[ INFO ] [2019-08-24 18:03:04] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[ INFO ] [2019-08-24 18:03:04] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[ INFO ] [2019-08-24 18:03:04] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-08-24 18:03:04] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-08-24 18:03:05] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[ INFO ] [2019-08-24 18:03:05] com.tasks.QueryTests [57] - Started QueryTests in 8.143 seconds (JVM running for 10.186)
+[ INFO ] [2019-08-24 18:03:05] org.springframework.web.context.support.GenericWebApplicationContext [984] - Closing org.springframework.web.context.support.GenericWebApplicationContext@7ea9e1e2: startup date [Sat Aug 24 18:02:58 CST 2019]; root of context hierarchy
+[ INFO ] [2019-08-24 18:04:39] org.springframework.boot.test.context.SpringBootTestContextBootstrapper [307] - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.tasks.QueryTests], using SpringBootContextLoader
+[ INFO ] [2019-08-24 18:04:39] org.springframework.test.context.support.AbstractContextLoader [264] - Could not detect default resource locations for test class [com.tasks.QueryTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+[ INFO ] [2019-08-24 18:04:39] org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [82] - Could not detect default configuration classes for test class [com.tasks.QueryTests]: QueryTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[ INFO ] [2019-08-24 18:04:39] org.springframework.boot.test.context.SpringBootTestContextBootstrapper [206] - Found @SpringBootConfiguration com.tasks.Application for test class com.tasks.QueryTests
+[ INFO ] [2019-08-24 18:04:40] org.springframework.boot.test.context.SpringBootTestContextBootstrapper [248] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[ INFO ] [2019-08-24 18:04:40] org.springframework.boot.test.context.SpringBootTestContextBootstrapper [174] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7a4ccb53, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@309e345f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@56a6d5a6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@18ce0030, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4445629, org.springframework.test.context.transaction.TransactionalTestExecutionListener@45b9a632, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@25d250c6, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4df50bcc, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6b26e945, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@63a65a25, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@54c562f7, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@318ba8c8]
+[ INFO ] [2019-08-24 18:04:41] com.tasks.QueryTests [48] - Starting QueryTests on HI6XWD32Z4B3UIU with PID 6820 (started by Administrator in D:\GitRepository\DroolsTasks)
+[ INFO ] [2019-08-24 18:04:41] com.tasks.QueryTests [593] - No active profile set, falling back to default profiles: default
+[ INFO ] [2019-08-24 18:04:41] org.springframework.web.context.support.GenericWebApplicationContext [583] - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7ea9e1e2: startup date [Sat Aug 24 18:04:41 CST 2019]; root of context hierarchy
+[ INFO ] [2019-08-24 18:04:42] org.hibernate.validator.internal.util.Version [30] - HV000001: Hibernate Validator 5.3.6.Final
+[ WARN ] [2019-08-24 18:04:43] org.springframework.context.annotation.ConfigurationClassEnhancer [350] - @Bean method DroolsAutoConfiguration.kiePostProcessor is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+[ INFO ] [2019-08-24 18:04:43] org.kie.spring.KModuleBeanFactoryPostProcessor [103] - :: BeanFactoryPostProcessor::postProcessBeanFactory called ::
+[ WARN ] [2019-08-24 18:04:43] org.drools.compiler.kie.builder.impl.ClasspathKieProject [336] - Unable to find pom.properties in /D:/GitRepository/DroolsTasks/target/classes/com/tasks/config
+[ INFO ] [2019-08-24 18:04:43] org.drools.compiler.kie.builder.impl.ClasspathKieProject [378] - Recursed up folders, found and used pom.xml D:\GitRepository\DroolsTasks\pom.xml
+[ INFO ] [2019-08-24 18:04:43] org.kie.spring.KModuleBeanFactoryPostProcessor [119] - Found project with releaseId: com.tasks:DroolsTasks:1.0-SNAPSHOT
+[ INFO ] [2019-08-24 18:04:43] org.kie.api.internal.utils.ServiceDiscoveryImpl [105] - Loading kie.conf from  jar:file:/D:/mavenRepository/org/drools/drools-core/7.21.0.Final/drools-core-7.21.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+[ INFO ] [2019-08-24 18:04:43] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.drools.core.io.impl.ResourceFactoryServiceImpl
+
+[ INFO ] [2019-08-24 18:04:43] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.drools.core.marshalling.impl.MarshallerProviderImpl
+
+[ INFO ] [2019-08-24 18:04:43] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.drools.core.concurrent.ExecutorProviderImpl
+
+[ INFO ] [2019-08-24 18:04:43] org.kie.api.internal.utils.ServiceDiscoveryImpl [105] - Loading kie.conf from  jar:file:/D:/mavenRepository/org/kie/kie-internal/7.21.0.Final/kie-internal-7.21.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+[ INFO ] [2019-08-24 18:04:43] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.kie.internal.services.KieAssemblersImpl
+
+[ INFO ] [2019-08-24 18:04:43] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.kie.internal.services.KieRuntimesImpl
+
+[ INFO ] [2019-08-24 18:04:43] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.kie.internal.services.KieWeaversImpl
+
+[ INFO ] [2019-08-24 18:04:43] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.kie.internal.services.KieBeliefsImpl
+
+[ INFO ] [2019-08-24 18:04:43] org.kie.api.internal.utils.ServiceDiscoveryImpl [105] - Loading kie.conf from  jar:file:/D:/mavenRepository/org/jbpm/jbpm-flow/7.21.0.Final/jbpm-flow-7.21.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+[ INFO ] [2019-08-24 18:04:43] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.jbpm.marshalling.impl.ProcessMarshallerFactoryServiceImpl
+
+[ INFO ] [2019-08-24 18:04:43] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.jbpm.process.instance.ProcessRuntimeFactoryServiceImpl
+
+[ INFO ] [2019-08-24 18:04:43] org.kie.api.internal.utils.ServiceDiscoveryImpl [105] - Loading kie.conf from  jar:file:/D:/mavenRepository/org/kie/kie-dmn-core/7.21.0.Final/kie-dmn-core-7.21.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+[ INFO ] [2019-08-24 18:04:43] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service +org.kie.dmn.core.assembler.DMNAssemblerService
+
+[ INFO ] [2019-08-24 18:04:43] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service +org.kie.dmn.core.runtime.DMNRuntimeService
+
+[ INFO ] [2019-08-24 18:04:43] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service +org.kie.dmn.core.weaver.DMNWeaverService
+
+[ INFO ] [2019-08-24 18:04:43] org.kie.api.internal.utils.ServiceDiscoveryImpl [105] - Loading kie.conf from  jar:file:/D:/mavenRepository/org/drools/drools-model-compiler/7.21.0.Final/drools-model-compiler-7.21.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+[ INFO ] [2019-08-24 18:04:43] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.drools.modelcompiler.CanonicalKieModuleProvider
+
+[ INFO ] [2019-08-24 18:04:43] org.kie.api.internal.utils.ServiceDiscoveryImpl [105] - Loading kie.conf from  jar:file:/D:/mavenRepository/org/drools/drools-compiler/7.21.0.Final/drools-compiler-7.21.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+[ INFO ] [2019-08-24 18:04:43] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.drools.compiler.kie.builder.impl.KieServicesImpl
+
+[ INFO ] [2019-08-24 18:04:43] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.drools.compiler.builder.impl.KnowledgeBuilderFactoryServiceImpl
+
+[ INFO ] [2019-08-24 18:04:43] org.kie.api.internal.utils.ServiceDiscoveryImpl [105] - Loading kie.conf from  jar:file:/D:/mavenRepository/org/drools/drools-decisiontables/7.21.0.Final/drools-decisiontables-7.21.0.Final.jar!/META-INF/kie.conf in classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+[ INFO ] [2019-08-24 18:04:43] org.kie.api.internal.utils.ServiceDiscoveryImpl [139] - Adding Service org.drools.decisiontable.DecisionTableProviderImpl
+
+[ INFO ] [2019-08-24 18:04:43] org.drools.compiler.kie.builder.impl.KieRepositoryImpl [111] - KieModule was added: com.tasks.config.DroolsAutoConfiguration$1@495083a0
+[ ERROR] [2019-08-24 18:04:46] org.drools.compiler.kie.builder.impl.KieProject [267] - Unable to build KieBaseModel:defaultKieBase
+[11,7]: [ERR 102] Line 11:7 mismatched input '{' in query
+[0,0]: Parser returned a null Package
+
+[ WARN ] [2019-08-24 18:04:46] org.springframework.web.context.support.GenericWebApplicationContext [551] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'kieContainer' defined in class path resource [com/tasks/config/DroolsAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.kie.api.runtime.KieContainer]: Factory method 'kieContainer' threw exception; nested exception is java.lang.ClassCastException: com.tasks.config.DroolsAutoConfiguration$1 cannot be cast to org.drools.compiler.kie.builder.impl.InternalKieModule
+[ INFO ] [2019-08-24 18:04:46] org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer [101] - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+[ ERROR] [2019-08-24 18:04:46] org.springframework.boot.SpringApplication [771] - Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'kieContainer' defined in class path resource [com/tasks/config/DroolsAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.kie.api.runtime.KieContainer]: Factory method 'kieContainer' threw exception; nested exception is java.lang.ClassCastException: com.tasks.config.DroolsAutoConfiguration$1 cannot be cast to org.drools.compiler.kie.builder.impl.InternalKieModule
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1181)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1075)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:121)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.kie.api.runtime.KieContainer]: Factory method 'kieContainer' threw exception; nested exception is java.lang.ClassCastException: com.tasks.config.DroolsAutoConfiguration$1 cannot be cast to org.drools.compiler.kie.builder.impl.InternalKieModule
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 41 common frames omitted
+Caused by: java.lang.ClassCastException: com.tasks.config.DroolsAutoConfiguration$1 cannot be cast to org.drools.compiler.kie.builder.impl.InternalKieModule
+	at org.drools.compiler.kie.builder.impl.KieServicesImpl.newKieContainer(KieServicesImpl.java:184)
+	at org.drools.compiler.kie.builder.impl.KieServicesImpl.newKieContainer(KieServicesImpl.java:172)
+	at com.tasks.config.DroolsAutoConfiguration.kieContainer(DroolsAutoConfiguration.java:46)
+	at com.tasks.config.DroolsAutoConfiguration$$EnhancerBySpringCGLIB$$dad3c599.CGLIB$kieContainer$3(<generated>)
+	at com.tasks.config.DroolsAutoConfiguration$$EnhancerBySpringCGLIB$$dad3c599$$FastClassBySpringCGLIB$$92e8ea04.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at com.tasks.config.DroolsAutoConfiguration$$EnhancerBySpringCGLIB$$dad3c599.kieContainer(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 42 common frames omitted
+[ ERROR] [2019-08-24 18:04:46] org.springframework.test.context.TestContextManager [234] - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@7a4ccb53] to prepare test instance [com.tasks.QueryTests@29138d3a]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'kieContainer' defined in class path resource [com/tasks/config/DroolsAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.kie.api.runtime.KieContainer]: Factory method 'kieContainer' threw exception; nested exception is java.lang.ClassCastException: com.tasks.config.DroolsAutoConfiguration$1 cannot be cast to org.drools.compiler.kie.builder.impl.InternalKieModule
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1181)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1075)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:121)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 24 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.kie.api.runtime.KieContainer]: Factory method 'kieContainer' threw exception; nested exception is java.lang.ClassCastException: com.tasks.config.DroolsAutoConfiguration$1 cannot be cast to org.drools.compiler.kie.builder.impl.InternalKieModule
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 41 common frames omitted
+Caused by: java.lang.ClassCastException: com.tasks.config.DroolsAutoConfiguration$1 cannot be cast to org.drools.compiler.kie.builder.impl.InternalKieModule
+	at org.drools.compiler.kie.builder.impl.KieServicesImpl.newKieContainer(KieServicesImpl.java:184)
+	at org.drools.compiler.kie.builder.impl.KieServicesImpl.newKieContainer(KieServicesImpl.java:172)
+	at com.tasks.config.DroolsAutoConfiguration.kieContainer(DroolsAutoConfiguration.java:46)
+	at com.tasks.config.DroolsAutoConfiguration$$EnhancerBySpringCGLIB$$dad3c599.CGLIB$kieContainer$3(<generated>)
+	at com.tasks.config.DroolsAutoConfiguration$$EnhancerBySpringCGLIB$$dad3c599$$FastClassBySpringCGLIB$$92e8ea04.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at com.tasks.config.DroolsAutoConfiguration$$EnhancerBySpringCGLIB$$dad3c599.kieContainer(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 42 common frames omitted

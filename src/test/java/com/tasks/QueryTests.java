@@ -1,6 +1,9 @@
 package com.tasks;
 
+import com.tasks.agendaFilter.MyRuleNameWithAgendaFilter;
+import com.tasks.dataObj.User;
 import com.tasks.dataObj.VIPUser;
+import org.drools.core.base.RuleNameEqualsAgendaFilter;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.kie.api.runtime.KieSession;
@@ -25,24 +28,36 @@ public class QueryTests {
         vipUser1.setVipNo("110");
         vipUserList.add(vipUser1);
         VIPUser vipUser2=new VIPUser();
-        vipUser2.setName("张三");
-        vipUser2.setVipNo("110");
+        vipUser2.setName("刘备");
+        vipUser2.setVipNo("111");
         vipUserList.add(vipUser2);
         VIPUser vipUser3=new VIPUser();
-        vipUser3.setName("张三");
-        vipUser3.setVipNo("110");
+        vipUser3.setName("李五");
+        vipUser3.setVipNo("112");
         vipUserList.add(vipUser3);
         VIPUser vipUser4=new VIPUser();
-        vipUser4.setName("张三");
-        vipUser4.setVipNo("110");
+        vipUser4.setName("刘备");
+        vipUser4.setVipNo("2");
         vipUserList.add(vipUser4);
         VIPUser vipUser5=new VIPUser();
-        vipUser5.setName("张三");
-        vipUser5.setVipNo("110");
+        vipUser5.setName("关羽");
+        vipUser5.setVipNo("123456");
         vipUserList.add(vipUser5);
 
         //设置全局变量
         kieSession.setGlobal("vipUserList",vipUserList);
+        User user1=new User();
+        user1.setName("张三");
+        user1.setAge(12);
 
+        User user2=new User();
+        user2.setName("刘备");
+        user2.setAge(12);
+
+        kieSession.insert(user1);
+
+        kieSession.insert(user2);
+        kieSession.fireAllRules(new RuleNameEqualsAgendaFilter("queryTest"));
+        kieSession.dispose();
     }
 }

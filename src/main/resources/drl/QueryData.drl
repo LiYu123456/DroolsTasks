@@ -8,7 +8,11 @@ import java.lang.Exception
 global java.util.List vipUserList;
 
 query queryData_1
-   exists (VIPUser(name=="刘备" && (vipNo=="123456" || 12=="ff")) from vipUserList)
+   exists (VIPUser(VIPUser.name=="刘备" && (VIPUser.vipNo=="123456" || 12=="12" || VIPUser.vipNo == null)) from vipUserList)
+end
+
+query queryData_3(conditions,tableName)
+   "exists ("+tableName+"("+conditions+") from "+tableName+"List)"
 end
 
 
@@ -16,6 +20,14 @@ rule queryTest
     when
         //$p:User(name=="刘备")
         queryData_1()
+    then
+        System.out.println("存在该用户");
+end
+
+rule queryTest3
+    when
+        //$p:User(name=="刘备")
+        queryData_3("VIPUser.name=="刘备" && (VIPUser.vipNo=="123456" || 12=="12" || VIPUser.vipNo == null)","VIPUser")
     then
         System.out.println("存在该用户");
 end

@@ -1,0 +1,22 @@
+package drl;
+
+import com.tasks.dataObj.User;
+import com.tasks.dataObj.VIPUser;
+import java.util.List;
+import java.util.Map;
+import java.lang.Exception
+
+global java.util.List vipUserList;
+
+query queryData_2
+   exists  (Map(name=="刘备" && vipNo=="123456" && 12=="ff" ) from vipUserList)
+end
+
+
+rule queryMapTest
+    when
+        //$p:User(name=="刘备")
+        queryData_2()
+    then
+        System.out.println("存在该用户");
+end

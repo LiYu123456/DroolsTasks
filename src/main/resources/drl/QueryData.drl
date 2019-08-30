@@ -3,17 +3,18 @@ package drl;
 import com.tasks.dataObj.User;
 import com.tasks.dataObj.VIPUser;
 import java.util.List;
+import java.util.Map;
 import java.lang.Exception
 
 global java.util.List vipUserList;
 
 query queryData_1
-   exists (VIPUser(VIPUser.name=="刘备" && (VIPUser.vipNo=="123456" || 12=="12" || VIPUser.vipNo == null)) from vipUserList)
+   exists (VIPUser(VIPUser.name=="刘备" && (VIPUser.vipNo=="123456" || 12=="ff" || VIPUser.vipNo == null)) from vipUserList)
 end
 
-query queryData_3(conditions,tableName)
-   "exists ("+tableName+"("+conditions+") from "+tableName+"List)"
-end
+//query queryData_3(conditions,tableName)
+//   "exists ("+tableName+"("+conditions+") from "+tableName+"List)"
+//end
 
 
 rule queryTest
@@ -24,10 +25,19 @@ rule queryTest
         System.out.println("存在该用户");
 end
 
-rule queryTest3
+//rule queryTest3
+//    when
+//        //$p:User(name=="刘备")
+//        queryData_3("VIPUser.name=="刘备" && (VIPUser.vipNo=="123456" || 12=="12" || VIPUser.vipNo == null)","VIPUser")
+//    then
+//        System.out.println("存在该用户");
+//end
+
+rule strTest1
     when
-        //$p:User(name=="刘备")
-        queryData_3("VIPUser.name=="刘备" && (VIPUser.vipNo=="123456" || 12=="12" || VIPUser.vipNo == null)","VIPUser")
+        $user1:Map(name=="张三")
+        $user2:Map(desc=="三")
+        $user3:Map(age=="12",($user1.name contains $user3.desc))
     then
-        System.out.println("存在该用户");
+       System.out.println("通过了"+$user1.get("desc"));
 end

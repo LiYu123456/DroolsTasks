@@ -88,7 +88,7 @@ public class QueryTests {
 
         Map map4=new HashMap();
         map4.put("name","刘备");
-        map4.put("vipNo","3");
+        map4.put("vipNo","123456");
         vipUserList.add(map4);
 
 
@@ -112,6 +112,23 @@ public class QueryTests {
 
         kieSession.insert(user2);
         kieSession.fireAllRules(new RuleNameEqualsAgendaFilter("queryMapTest"));
+        kieSession.dispose();
+    }
+
+    @Test
+    public void  strTest(){
+
+//        User user2=new User();
+//        user2.setName("备张备");
+//        user2.setAge(12);
+        Map<String,Object> map=new HashMap<>();
+        map.put("name","张三");
+        map.put("desc","三");
+        map.put("age","12");
+
+        kieSession.insert(map);
+
+        kieSession.fireAllRules(new RuleNameEqualsAgendaFilter("strTest1"));
         kieSession.dispose();
     }
 }

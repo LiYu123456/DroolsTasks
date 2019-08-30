@@ -9,7 +9,7 @@ import java.lang.Exception
 global java.util.List vipUserList;
 
 query queryData_2
-   exists  (Map(name=="刘备" && vipNo=="123456" && 12=="ff" ) from vipUserList)
+   exists  (Map(name=="刘备" && (vipNo=="123456" || 12=="ee") ) from vipUserList)
 end
 
 

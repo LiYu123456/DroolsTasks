@@ -29,6 +29,13 @@ public class HelloWorldTests {
 
     @Test
     public void testUser(){
+
+        List list=new ArrayList<>();
+        kieSession.setGlobal("myGlobalList",list);
+        /**
+         * 执行所有的规则
+         */
+//        kieSession.fireAllRules();
         User user1=new User();
         user1.setName("张三");
         user1.setAge(18);
@@ -39,17 +46,22 @@ public class HelloWorldTests {
         user2.setAge(20);
         user2.setGender("女");
         kieSession.insert(user2);
-        List list=new ArrayList<>();
-        kieSession.setGlobal("myGlobalList",list);
-        /**
-         * 执行所有的规则
-         */
-//        kieSession.fireAllRules();
         /**
          * 执行指定名字的SQL
          */
-//        kieSession.fireAllRules(new RuleNameEndsWithAgendaFilter("user"));
-        kieSession.fireAllRules(new MyRuleNameWithAgendaFilter("user"));
+        kieSession.fireAllRules(new RuleNameEqualsAgendaFilter("user"));
+        User user3=new User();
+        user3.setName("张三");
+        user3.setAge(18);
+        user3.setGender("女");
+        kieSession.insert(user3);
+        User user4=new User();
+        user4.setName("李四");
+        user4.setAge(20);
+        user4.setGender("女");
+        kieSession.insert(user4);
+        kieSession.fireAllRules(new RuleNameEqualsAgendaFilter("user"));
+//        kieSession.fireAllRules(new MyRuleNameWithAgendaFilter("user"));
 //        System.out.println("得到User变了:"+user1.getGender());
     }
 

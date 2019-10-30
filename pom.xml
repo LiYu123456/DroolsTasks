@@ -20,7 +20,7 @@
         <lombok.version>1.16.6</lombok.version>
         <tk.mybatis.mapper.version>3.3.8</tk.mybatis.mapper.version>
         <spring-test.version>4.1.8.RELEASE</spring-test.version>
-        <fastjson.version>1.2.12</fastjson.version>
+        <fastjson.version>1.2.25</fastjson.version>
         <mysql-connector-java.version>5.1.40</mysql-connector-java.version>
         <poi.version>3.16</poi.version>
         <swagger.version>2.7.0</swagger.version>
